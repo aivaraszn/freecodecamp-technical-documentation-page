@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    margin-left: 30rem;
+}
+
+nav {
+    height: 100vh;
+    position: fixed;
+    width: 30rem;
+    background-color: rgb(245, 245, 245);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(0, 0, 0, 0.719);
+}
+
+nav > header {
+    font-size: 2.2rem;
+    padding: 1rem;
+    margin-top: 3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.719);
+}
+
+nav > a {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 2rem;
+    color: rgb(27, 27, 27);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.719);
+}
+
+section {
+    padding-left: 4rem;
+}
+
+header {
+    font-size: 3rem;
+    line-height: 3rem;
+    padding: 2rem 0rem 2rem 0rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.5rem;
+    color: rgb(27, 27, 27);
+}
+
+p, li {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(27, 27, 27);
+}
+
+p {
+    padding-left: 2rem;
+}
+
+li {
+    margin-left: 6rem;
+}
+
+.nested-li {
+    margin-left: 10rem;
+}
+
+code {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    background-color: rgb(218, 219, 205);
+    display: inline-block;
+    margin: 1rem;
+    margin-left: 9rem;
+    padding: 1.5rem;
+    letter-spacing: 0.2rem;
+    word-break: normal;
+    word-wrap: normal;
+    white-space: pre-line;
+    line-height: 1.5;
+    color: rgb(27, 27, 27);
+}
+
+@media only screen and (max-width: 700px) {
+    nav{
+      display: none;
+    }
+    main {
+        margin-left: 0rem;
+    }
+  }
